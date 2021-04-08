@@ -420,6 +420,7 @@ div.footer h6 {
 
   div.background {
     padding: 10px 40px;
+    z-index: -5;
   }
 
   div.hero-background-pos {
