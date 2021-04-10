@@ -351,6 +351,10 @@ div.footer h6 {
   display: none;
 }
 
+.fa {
+  cursor: pointer;
+}
+
 /*--Media Queries-- */
 @media screen and (max-width: 768px) {
   /* --Hamburger Menu-- */
@@ -369,6 +373,11 @@ div.footer h6 {
     margin-bottom: -100px;
   }
 
+  /* --Toggle Hamburger Menu-- */
+  div.nav-bar .nav-links.show {
+    right: 0;
+  }
+
   nav ul {
     position: fixed;
     display: flex;
@@ -382,10 +391,6 @@ div.footer h6 {
     height: 100vh;
     opacity: 0.9;
     transition: right 0.5s ease-in-out;
-  }
-
-  #hamburger:checked ~ ul {
-    right: 0;
   }
 
   nav ul li {
